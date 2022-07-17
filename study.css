@@ -1,0 +1,65 @@
+body {
+	color: #000e27;
+}
+
+.visited:visited {
+	color: #1c4da1;
+}
+
+.find-a-course {
+	background-color: #e4ebf9;
+	padding: 150px 0px 50px 120px;
+}
+
+.find-a-course h1 {
+	font-size: 3em;
+	line-height: 60px;
+	font-weight: 400;
+}
+
+.find-a-course p {
+	font-size: 1.25em;
+	font-weight: 300;
+	line-height: 32px;
+}
+
+.img-and-info {
+	width: 100%;
+	display: flex;
+	padding-top: 100px;
+	padding-left: 100px;
+}
+
+.img {
+	width: 50%;
+}
+
+.info {
+	width: 50%;
+}
+
+.info h1 {
+	font-size: 2em;
+	line-height: 50px;
+	font-weight: 400;
+}
+
+.info p {
+	font-size: 1.25em;
+	line-height: 32px;
+	font-weight: 300;
+}
+
+.info strong, .icon {
+	font-size: 1.125em;
+	line-height: 25px;
+	font-weight: 600;
+	color: #1c4da1;
+}
+
+#padding-top {
+	padding-top: 100px;
+}
+
+
+

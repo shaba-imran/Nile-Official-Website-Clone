@@ -1,0 +1,483 @@
+* { box-sizing: border-box; }
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: auto 0;
+	font-size: 100%;
+	font-family: "Gilda Display", sans-serif;
+	color: white;
+}
+
+
+/* (1)LOGO AND (2)NAV-LINKS + (3)MEGA-MENU*/
+.header {
+	font-size: 1.4em;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: Manrope;
+}
+
+/* (3)MEGA MENU */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  padding-top: 25px;
+  padding-bottom: 33px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 65%;
+  left: 330px;
+  top: 85px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px;
+}
+
+.column a {
+  float: none;
+  color: #333;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  line-height: 28px;
+  font-weight: 200;
+  font-size: 0.8125em;
+}
+
+.border-right a {
+	border-right: 1px solid #e4e8eb;
+}
+
+.column-3 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 450px;
+}
+
+.column-4 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 270px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* (2)NAV-LINKS */
+li {
+  padding: 0px 15px;
+}
+
+li a {
+	text-decoration: none;
+	color: #333;
+}
+
+li a:hover {
+	color: #1c4da1;
+}
+
+ul:last-child {
+	color: #333;
+}
+
+.fa-equals {
+	font-size: 1.4em;
+}
+
+
+/* NOTICE */
+.notice {
+	background-color: #1c4da1;
+	text-align: center;
+	padding-top: 15px;
+	height: 70px;
+	font-size: 1.125em;
+}
+
+.notice a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* SLIDESHOW CONTAINER */
+.slideshow-container {
+  height: 75%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.slide-1 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(images/slides/slider1.jpeg);
+	background-position: 50% 90%;
+}
+
+.slide-2 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url(images/slides/slider2.jpeg);
+	background-position: 50% 80%;
+}
+
+.slide-3 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(images/slides/slider3.jpeg);
+	background-position: 50% 40%;
+}
+
+.slide-4 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(images/slides/slider4.jpeg);
+	background-position: 50% 85%;
+}
+
+.slide-5 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url(images/slides/slider5.jpeg);
+	background-position: 50% 30%;
+}
+
+#header-info-1 {
+	position: absolute;
+	font-size: 2.5em;
+	font-weight: lighter;
+	line-height: 60px;
+	top: 27%;
+	left: 10%;
+	user-select: text;
+}
+
+.btn-info-1{
+	position: absolute;
+	top: 60%;
+	left: 10%;
+}
+
+.button {
+	background-color: #1c4da1;
+	border: none;
+	color: white;
+	padding: 22px 30px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.125em;
+	cursor: pointer;
+}
+
+#header-info-2 {
+	position: absolute;
+	top: 15%;
+	left: 7%;
+	font-size: 2.5em;
+	font-weight: lighter;
+	user-select: text;
+}
+
+#header-info-2 + p {
+	position: absolute;
+	top: 38%;
+	left: 7%;
+	font-size: 1.25em;
+	line-height: 32px;
+}
+
+.btn-info-2 {
+	position: absolute;
+	top: 60%;
+	left: 7%;
+}
+
+#header-info-3 {
+	position: absolute;
+	font-size: 2.5em;
+	font-weight: lighter;
+	line-height: 60px;
+	top: 20%;
+	left: 10%;
+	user-select: text;
+}
+
+.btn-info-3 {
+	position: absolute;
+	top: 60%;
+	left: 10%;
+}
+
+#header-info-4 {
+	position: absolute;
+	top: 25%;
+	left: 7%;
+	font-size: 2.5em;
+	font-weight: lighter;
+	user-select: text;
+}
+
+#header-info-4 + p {
+	position: absolute;
+	top: 38%;
+	left: 7%;
+	font-size: 1.25em;
+	line-height: 32px;
+}
+
+.btn-info-4 {
+	position: absolute;
+	top: 62%;
+	left: 7%;
+}
+
+#header-info-5 {
+	position: absolute;
+	top: 22%;
+	left: 10%;
+	font-size: 2.5em;
+	font-weight: lighter;
+	user-select: text;
+}
+
+#header-info-5 + p {
+	position: absolute;
+	top: 35%;
+	left: 10%;
+	font-size: 1.25em;
+	line-height: 32px;
+}
+
+.btn-info-5 {
+	position: absolute;
+	top: 62%;
+	left: 10%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+  margin-bottom: 20px;
+  /*z-index: 900;*/
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #00000000;
+  border: 2px solid #ffffffb6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* CARDS */
+.cards {
+	padding: 70px 90px 100px;
+	text-align: center;
+	display: flex;
+	column-gap: 22px;
+}
+
+.card-1, .card-3 {
+	color: #ffffff;
+	background-color: #1c4da1;
+	border: 1px solid;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.card-2 {
+	color: #000e27;
+	border: 1px solid #1c4da1;
+	border-radius: 10px;
+	padding: 20px 45px;
+}
+
+.card-header {
+	font-size: 1.5em;
+	line-height: 32px;
+	font-weight: 500;
+}
+
+.card-info-1 {
+	font-size: 1.25em;
+	font-weight: 300;
+	padding: 40px 0px;
+}
+
+.card-info-2 {
+	color: #3f495a;
+}
+
+.border-bottom-1 {
+	padding-bottom: 45px;
+	border-bottom: 1px solid #ffffff;
+}
+
+.border-bottom-2 {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #1c4da1;
+}
+
+.learn-more {
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 25px;
+	font-size: 1.125em;
+}
+
+.card-2 a {
+	color: #000e27;
+}
+
+
+/* FOOTER */
+.footer {
+	background-color: #1c4da1;
+	color: #D0DCEF;
+	line-height: 28px;
+	padding: 100px 100px 50px;
+	display: flex;
+}
+
+.address-and-tel {
+	display: flex;
+	column-gap: 15px;
+	padding-left: 15px;
+	border-bottom: 1px solid #D0DCEF;
+	padding-bottom: 25px;
+}
+
+.fa-location-dot, .fa-phone {
+	font-size: 1.5em;
+	color: #a4b8d9;
+}
+
+.footer-links-1 a {
+	color: #D0DCEF;
+	text-decoration: none;
+	padding-right: 45px;
+}
+
+.footer-links-1 {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.social-icon i {
+	font-size: 1.5625em;
+	padding-right: 45px;
+}
+
+.footer-links-2 a {
+	display: block;
+	height: 50px;
+	text-decoration: none;
+	color: #D0DCEF;
+	border-left: 1px solid #D0DCEF;
+	padding-left: 20px;
+}
+
+.copyright-info {
+	color: #ffffff;
+	background-color: #3A63A8;
+	font-size: 0.875em;
+	padding: 22px 130px 32px;
+}
+
