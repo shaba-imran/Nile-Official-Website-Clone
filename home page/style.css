@@ -538,6 +538,12 @@ ul:last-child {
 .chat button:hover {
 	background-color: #1c4da1;
 	color: #ffffff;
+}
+
+
+/* 	YOUTUBE EMBED */
+.youtube-embed {
+	text-align: center;
 } 
 
 
