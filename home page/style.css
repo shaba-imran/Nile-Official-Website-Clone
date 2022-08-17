@@ -436,24 +436,65 @@ ul:last-child {
 	padding-left: 100px;
 }
 
-.chat {
-	color: #000e27;
-	padding-bottom: 40px;
-	display: flex;
-	justify-content: center;
-	column-gap: 60px;
+#overflowTest {
+	margin-left: auto;
+	margin-right: auto;
+	height: 850px; /* Initial width = "850px", Change the width to "430px" and overflow="hidden", i kept it to test the height of the bottom cards to ensure they are the same */
+	width: 1200px;
+	border: 1px solid red;
+	overflow: scroll;
 }
 
-.student-1, .student-2, .student-3 {
+#overflowTest a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 13px 27px;
+}
+
+.prev-btn {
+	position: absolute;
+	top: 1680px;
+}
+
+.next-btn {
+	margin-left: -20px;
+	position: absolute;
+	top: 1680px;
+}
+
+.prev-and-next:hover { background-color: #1c4da1; }
+
+.prev-and-next {
+  background-color: #5C80BD;
+  color: white;
+  font-size: 32px;
+}
+
+.round { border-radius: 50%; }
+
+.chat {
+	color: #000e27;
+	padding: 0px 40px;
+}
+
+.student-1, .student-2, .student-3, .student-4, .student-5, .more-students {
+	float: left;
+	width: 28%;
 	border: 1px solid #e4e8eb;
 	border-radius: 5px;
 	color: #333333;
 	line-height: 24px;
 	text-align: center;
+	margin: 28px;
+	height: 365px;
 	padding-top: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
 	position: relative;
+}
+
+.more-students {
+	height: 365px;
+	color: #1c4da1;
+	padding: 70px 0px;
 }
 
 .chat img {
@@ -493,6 +534,12 @@ ul:last-child {
 	background-color: #ffffff;
 	margin: 20px 0px;
 }
+
+.chat button:hover {
+	background-color: #1c4da1;
+	color: #ffffff;
+} 
+
 
 /* FOOTER */
 .footer {
