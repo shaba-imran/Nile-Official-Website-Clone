@@ -538,7 +538,44 @@ ul:last-child {
 .chat button:hover {
 	background-color: #1c4da1;
 	color: #ffffff;
-} 
+}
+
+
+/* NILE FEATURES */
+.institution-features {
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	column-gap: 15px;
+}
+
+#global, #employability, #experience {
+	width: 33.3%;
+	border: 1px solid;
+	background-color: rgb(228, 235, 239);
+	padding: 87px 37px;
+	text-align: center;
+}
+
+.institution-features h2 {
+	color: #000e27;
+	line-height: 48px;
+	font-weight: 400;
+	font-size: 2.3em;
+}
+
+.institution-features p {
+	color: #3f495a;
+	line-height: 30px;
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+
+/* 	YOUTUBE EMBED */
+#youtube-embed {
+	text-align: center;
+}
 
 
 /* FOOTER */
