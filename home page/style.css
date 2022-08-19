@@ -521,6 +521,7 @@ ul:last-child { color: #333; }
 
 /* NILE FEATURES */
 .institution-features {
+	clear: both;
 	padding: 100px;
 	display: flex;
 	justify-content: center;
@@ -572,7 +573,7 @@ ul:last-child { color: #333; }
 	padding: 50px 60px;
 }
 
-.president-speech p, strong {
+.president-speech p, .president-speech strong {
 	color: #000e27;
 	line-height: 32px;
 	font-size: 1.25em;
@@ -582,6 +583,44 @@ ul:last-child { color: #333; }
 .president-speech strong {
 	font-weight: 500;
 	color: #1c4da1;
+}
+
+
+/* CLUBS AND ACTIVITIES + SPORTS AND RECREATION */
+.clubs-and-activ, .sports-and-recreation {
+	background-color: #e4ebf9;
+	display: flex;
+}
+
+.club-header, .sports-header {
+	color: #000e27;
+	font-weight: 200;
+	line-height: 60px;
+	font-size: 2.5em;
+}
+
+.club-info, .sports-info {
+	color: #333333;
+	line-height: 32px;
+	font-size: 1.25em;
+	font-weight: 300;
+	padding-bottom: 50px;
+}
+
+#clubs-and-activ, #sports-and-recreation {
+	padding-left: 100px;
+	padding-right: 70px;
+	padding-top: 20px;
+}
+
+.nile-socials {
+	height: 300px;
+	color: #000e27;
+	line-height: 60px;
+	font-size: 2.5em;
+	font-weight: lighter;
+	padding-left: 100px;
+	padding-top: 70px;
 }
 
 
