@@ -8,7 +8,7 @@ html, body {
 body {
 	margin: auto 0;
 	font-size: 100%;
-	font-family: "Gilda Display", sans-serif;
+	font-family: "Gilda Display", Sans-serif;
 	color: white;
 }
 
@@ -586,7 +586,90 @@ ul:last-child { color: #333; }
 }
 
 
+/* NEWS ITEMS + EVENTS ITEMS */
+.news-items, .events-items {
+	font-family: "Gilda Display";
+	color: #000e27;
+	padding: 50px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.news-header {
+	line-height: 60px;
+	font-size: 2.5em;
+	font-weight: 300;
+}
+
+.news-button {
+	font-size: 0.625em;
+	color: #ffffff;
+	background-color: #1c4da1;
+	text-align: center;
+	text-decoration: none;
+	padding: 8px 13px;
+	border-radius: 50px;
+	line-height: 12px;
+	font-weight: 300;
+	border: none;
+}
+
+.news-button-position {
+	position: absolute;
+	top: 4697px;
+	left: 580px;
+}
+
+.news-info {
+	line-height: 42px;
+	font-weight: 300;
+	font-size: 1.75em;
+}
+
+.news, .news-headlines { width: 42%; }
+
+.news-headlines, .event-headlines { padding-top: 135px; }
+
+.news-date {
+	color: #3f495a;
+	line-height: 32px;
+	font-weight: 300;
+	font-size: 1.125em;
+}
+
+.headline {
+	line-height: 36px;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.justfy-center {
+	display: flex;
+	justify-content: center;
+}
+
+.events, .events-headlines { width: 42%; }
+
+.event-date {
+	line-height: 32px;
+	font-size: 3em;
+	color: #1c4da1;
+	padding: 0px 20px;
+}
+
+.event-month {
+	line-height: 30px;
+	font-size: 1.25em;
+	color: #1c4da1;
+	padding: 0px 20px;
+}
+
+
 /* CLUBS AND ACTIVITIES + SPORTS AND RECREATION */
+.clubs-and-activ {
+	margin-top: 100px;
+}
+
 .clubs-and-activ, .sports-and-recreation {
 	background-color: #e4ebf9;
 	display: flex;
