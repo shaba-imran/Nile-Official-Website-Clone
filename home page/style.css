@@ -595,7 +595,7 @@ ul:last-child { color: #333; }
 	justify-content: center;
 }
 
-.news-header {
+.news-head, .events-header {
 	line-height: 60px;
 	font-size: 2.5em;
 	font-weight: 300;
