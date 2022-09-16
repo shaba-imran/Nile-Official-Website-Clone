@@ -28,13 +28,20 @@ function showSlides(n) {
 }
 
 / CHAT SECTION /
-const students = document.getElementsByClassName("students");
-const prevButton = document.getElementById("myBtn1");
-const nextButton = document.getElementById("myBtn2");
-const studentsLength = students.length;
+// const students = document.getElementsByClassName("students");
+// const prevButton = document.getElementById("myBtn1");
+// const nextButton = document.getElementById("myBtn2"); 
+  
+// const removeStudent = () => {
+//   let student = document.getElementsByClassName("student");
+//   for (let i=0; i < student.length; i++) {
+//     student[i].remove();
+//   }
+  
+// }
 
-for(let i = 0; i < studentsLength; i++) {
-  if (students[0]) {
-    students[0].shift();
-  }
-}
+// nextButton.addEventListener("click", removeStudent);
+
+
+
+
