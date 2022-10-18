@@ -416,41 +416,7 @@ ul:last-child { color: #333; }
 
 
 /* FACULTY */
-.faculty {
-	color: #ffffff;
-	background-image: url(../images/faculty-sctn-img.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
-	height: 700px;
-	padding-left: 70px;
-	display: flex;
-	column-gap: 25px;
-}
 
-.faculty-info {
-	width: 37%;
-	align-self: center;
-}
-
-.faculty-info h2 {
-	line-height: 60px;
-	font-size: 2.7em;
-	font-weight: lighter;
-}
-
-.faculty-info p {
-	line-height: 32px;
-	font-size: 1.25em;
-}
-
-.faculty-info button { margin-top: 25px; }
-
-.faculty-list {
-	width: 63%;
-	background-color: #0000004A;
-	height: 700px;
-}
 
 
 /* NILE FEATURES */
@@ -694,16 +660,27 @@ ul:last-child { color: #333; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1390px) {
-	.news-items, .events-items {
+	.news-items {
 		justify-content: space-between;
 		padding-left: 70px;
-		padding-right: 70px;
+		padding-right: 90px;
 	}
 
 	.activities-btn-position { left: 530px; }
-} 
+
+	.events-items {
+		justify-content: space-between;
+		padding-right: 90px;
+		padding-left: 90px;
+	}
+}
 
 @media screen and (max-width: 1300px) {
+	.nile-president {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
 	.footer { padding: 60px 0px 30px 60px; }
 
 	.address-and-tel { column-gap: 2px;}
@@ -729,8 +706,21 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 1212px) {
+	.events-items{
+		padding-left: 50px;
+		padding-right: 0;
+	}
+}
+
 @media screen and (max-width: 1186px) {
-	.news-items, .events-items { padding-right: 20px; }
+	.news-items { padding-right: 20px; }
+}
+
+@media screen and (max-width: 1140px) {
+	.nile-president { padding: 70px 30px; }
+	
+	.president-speech { padding: 30px 45px; }
 }
 
 @media screen and (max-width: 1130px) {
@@ -760,8 +750,12 @@ ul:last-child { color: #333; }
 	#clubs-and-activ button, #sports-and-recreation button { margin-bottom: 30px; }
 }
 
+@media screen and (max-width: 1085px) {
+	.events-items { padding-left: 20px; }
+}
+
 @media screen and (max-width: 1070px) {
-	.news-items, .events-items {
+	.news-items {
 		justify-content: space-between;
 		padding-left: 20px;
 		padding-right: 0;
@@ -770,7 +764,26 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 470px; }
 }
 
+@media screen and (max-width: 1053px) {
+	.events img {
+		width: 490px;
+		height: 350px;
+	}
+
+	.event-date, .event-month { padding: 0px 10px; }
+}
+
 @media screen and (max-width: 1040px) {
+	.nile-president {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.nile-president img {
+		width: 540px;
+		height: 320px;
+	}
+	
 	.clubs-and-activ, .sports-and-recreation {
 		padding-top: 10px;
 		padding-bottom: 8px;
@@ -801,12 +814,24 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 990px) {
-	.news-items {
+	.nile-president {
 		display: block;
 		padding: 0;
 	}
 
-	.news, .news-headlines {
+	.nile-president img {
+		width: 600px;
+		height: 350px;
+		display: block;
+		margin: auto;
+	}
+	
+	.news-items, .events-items {
+		display: block;
+		padding: 0;
+	}
+
+	.news, .news-headlines, .events, .event-headlines {
 		width: 100%;
 		padding: 55px;
 	}
@@ -816,14 +841,21 @@ ul:last-child { color: #333; }
 		height: 450px;
 	}
 
+	.events img {
+		width: 900px;
+		height: 520px;
+	}
+
 	.activities-btn-position {
 		left: 860px;
 		margin-top: -445px;
 	}
 
-	.news-headlines { padding-top: 0;}
+	.news-headlines, .event-headlines { padding-top: 0;}
 
-	.news-items + .justfy-center {
+	.event-headlines { margin: 0; }
+
+	.news-items + .justfy-center, .events-items + .justfy-center {
 		justify-content: flex-start;
 		padding-left: 55px;
 	}
@@ -833,6 +865,11 @@ ul:last-child { color: #333; }
 	.news img { width: 830px; }
 
 	.activities-btn-position { left: 795px; }
+
+	.events img {
+		width: 850px;
+		height: 510px;
+	}
 }
 
 @media screen and (max-width: 920px) {
@@ -857,10 +894,24 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 910px) {
+	.events img {
+		width: 820px;
+		height: 490px;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.news img { width: 800px; }
 
 	.activities-btn-position { left: 760px; }
+}
+
+@media screen and (max-width: 880px) {
+	.events img {
+		width: 800px;
+		height: 450px;
+	}
 }
 
 @media screen and (max-width: 865px) {
@@ -869,6 +920,10 @@ ul:last-child { color: #333; }
 	.news-items + .justfy-center { padding-left: 30px; }
 
 	.activities-btn-position { left: 750px; }
+}
+
+@media screen and (max-width: 860px) {
+	.events img { width: 775px; }
 }
 
 @media screen and (max-width: 834px) {
@@ -881,22 +936,41 @@ ul:last-child { color: #333; }
 
 	.news, .news-headlines { padding: 0; }
 	
-	.news-items + .justfy-center {
+	.news-items + .justfy-center, .events-items + .justfy-center {
 		padding: 0;
 		padding-top: 50px;
 		justify-content: center;
 	}
 
 	.news-headlines { padding-top: 45px; }
-	
-	.footer {
-		display: block;
-		padding: 20px 0px 5px 20px;
-	}
 
 	.activities-btn-position {
 		left: 655px;
 		margin-top: -345px;
+	}
+	
+	.events img {
+		width: 680px;
+		height: 400px;
+	}
+
+	.events-items + .justfy-center { padding: 0; }
+
+	.event-month { padding: 0; }
+
+	.event-month-1 { margin-left: -350px; }
+
+	.event-month-2 { margin-left: -200px; }
+
+	.event-month-3 { margin-left: -350px; }
+
+	.query-834 { margin-left: -30px; }
+
+	.query-834px { margin-left: 30px; }
+	
+	.footer {
+		display: block;
+		padding: 20px 0px 5px 20px;
 	}
 }
 
@@ -928,14 +1002,73 @@ ul:last-child { color: #333; }
 		padding-left: 40px;
 	}
 
+	.query-834 { margin: 0; }
+
 	.news-info, .headline {
 		width: 670px;
 		display: block;
 	}
 
+	.headline-1, .headline-2, .headline-3 {
+		position: relative;
+		top: -25px;
+		left: 75px;
+	}
+
+	.headline-4 {
+		position: relative;
+		top: -40px;
+		left: 75px;
+	}
+
+	.headline-5 {
+		position: relative;
+		top: -90px;
+		left: 45px;
+	}
+	
+	.event-month-1 {
+		margin-left: 12px;
+		position: relative;
+		bottom: 50px;
+	}
+
+	.event-month-2 {
+		margin-left: 13px;
+		position: relative;
+		bottom: 50px;
+	}
+
+	.event-month-3 {
+		margin-left: 8px;
+		position: relative;
+		bottom: 50px;
+	}
+
+	.event-month-4 {
+		margin-left: 12px;
+		position: relative;
+		bottom: 50px;
+	}
+
 	.activities-btn-position { left: 570px; }
 	
 	.news-items + .justfy-center {
+		justify-content: flex-start;
+		padding-left: 40px;
+	}
+
+	.events-header {padding-top: 35px;}
+
+	.events img {
+		width: 610px;
+		height: 380px;
+		margin-bottom: 30px;
+	}
+
+	.events, .event-headlines { padding: 0; }
+
+	.events-items + .justfy-center {
 		justify-content: flex-start;
 		padding-left: 40px;
 	}
@@ -948,10 +1081,15 @@ ul:last-child { color: #333; }
 
 	.activities-btn-position { left: 545px; }
 
-	.news-items + .justfy-center { padding-left: 20px; }
+	.news-items + .justfy-center, .events-items + .justfy-center { padding-left: 20px; }
 }
 
 @media screen and (max-width: 645px) {
+	.nile-president img {
+		width: 540px;
+		height: 320px;
+	}
+	
 	.news img { width: 100%; }
 
 	.news-items, .events-items {
@@ -968,8 +1106,42 @@ ul:last-child { color: #333; }
 	}
 
 	.news-info, .headline {
-	    width: 100%;
+		width: 100%;
 		padding: 0px 50px;
+	}
+
+	.event-month-1 { margin-left: -3px; }
+	
+	.headline-1 {
+		top: 35px;
+		left: 0;
+	}
+
+	.headline-2 {
+		top: 35px;
+		left: 0;
+	}
+
+	.headline-3 {
+		top: 35px;
+		left: 0;
+	}
+
+	.headline-4 {
+		top: 30px;
+		left: 0;
+	}
+
+	.headline-5 {
+		top: -20px;
+		left: 0;
+	}
+
+	.events img { width: 100%; }
+
+	.events-items + .justfy-center {
+		justify-content: center;
+		padding: 0;
 	}
 }
 
@@ -978,9 +1150,11 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 620px) {
-	.news-head, .events-header { font-size: 2em; }
-
 	.activities-btn-position { left: 520px; }
+
+	.events-header, .news-head { font-size: 2em; }
+
+	.event-date { font-size: 2.5em; }
 	
 	.nile-socials {
 		font-size: 2em;
@@ -1014,23 +1188,58 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 550px) {
+	.nile-president img {
+		width: 520px;
+		height: 315px;
+	}
+	
 	.activities-btn-position { left: 450px; }
 }
 
 @media screen and (max-width: 530px) {
+	.nile-president img {
+		width: 500px;
+		height: 300px;
+	}
+	
 	.activities-btn-position { left: 420px; }
+}
+
+@media screen and (max-width: 510px) {
+	.nile-president img { width: 480px; }
+}
+
+@media screen and (max-width: 506px) {
+	.event-month-4 {
+		bottom: 85px;
+		left: -5px;
+	}
 }
 
 @media screen and (max-width: 500px) {
 	.activities-btn-position { left: 390px; }
 }
 
+@media screen and (max-width: 490px) {
+	.nile-president img { width: 450px; }
+
+	.president-speech { padding: 20px 25px; }
+}
+
 @media screen and (max-width: 480px) {
+	.news img { height: 300px; }
+
+	.activities-btn-position { margin-top: -295px; }
+	
 	.news-info, .headline { padding: 0px 15px; }
 
 	.news-info { font-size: 1.5em; }
 
 	.headline { font-size: 1.32em; }
+
+	.events img { height: 330px; }
+
+	.event-month-4 { bottom: 45px; }
 	
 	.club-header, .sports-header {
 		font-size: 2em;
@@ -1060,11 +1269,25 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 365px; }
 }
 
+@media screen and (max-width: 455px) {
+	.nile-president img {
+		width: 430px;
+		height: 280px;
+	}
+
+	.president-speech p, .president-speech strong { font-size: 1.15em; }
+}
+
 @media screen and (max-width: 445px) {
 	.activities-btn-position { left: 340px; }
 }
 
 @media screen and (max-width: 435px) {
+	.nile-president img {
+		width: 400px;
+		height: 260px;
+	}
+	
 	.nile-socials {
 		font-size: 1.7em;
 		height: 120px;
@@ -1075,6 +1298,11 @@ ul:last-child { color: #333; }
 
 @media screen and (max-width: 420px) {
 	.activities-btn-position { left: 320px; }
+
+	.headline-5 {
+		padding: 0;
+		left: -30px;
+	}
 	
 	.justfy-center button { font-size: 1em; }
 	
@@ -1095,14 +1323,34 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 402px) {
+	.nile-president img {
+		width: 325px;
+		height: 235px;
+	}
+}
+
 @media screen and (max-width: 400px) {
-	.activities-btn-position { left: 300px; }
+	.news img, .events img { height: 250px; }
+	
+	.activities-btn-position {
+		left: 300px;
+		margin-top: -245px;
+	}
 }
 
 @media screen and (max-width: 395px) {
 	.footer-links-2 { padding-top: 30px; }
 	
 	.footer-links-2 a { padding: 0; }
+}
+
+@media screen and (max-width: 387px) {
+	.event-month-4 { bottom: 85px; }
+}
+
+@media screen and (max-width: 380px) {
+	.activities-btn-position { left: 290px; }
 }
 
 @media screen and (max-width: 375px) {
@@ -1112,7 +1360,17 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 371px) {
+	.activities-btn-position { left: 280px; }
+}
+
+@media screen and (max-width: 360px) {
+	.activities-btn-position { left: 270px; }
+}
+
 @media screen and (max-width: 351px) {
+	.activities-btn-position { left: 260px; }
+	
 	.news-info, .headline { padding: 0; }
 	
 	.footer-links-1 a {
@@ -1122,10 +1380,25 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 341px) {
+	.activities-btn-position { left: 245px; }
+}
+
 @media screen and (max-width: 338px) {
 	.clubs-and-activ div img { width: 100%; }
 
 	.sports-and-recreation div img { width: 100%; }
+}
+
+@media screen and (max-width: 330px) {
+	.nile-president img {
+		width: 305px;
+		height: 210px;
+	}
+}
+
+@media screen and (max-width: 326px) {
+	.activities-btn-position { left: 230px; }
 }
 
 @media screen and (max-width: 314px) {
@@ -1135,8 +1408,32 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 310px) {
+	.news img, .events img { height: 230px; }
+	
+	.activities-btn-position {
+		left: 220px;
+		margin-top: -225px;
+	}
+}
+
+@media screen and (max-width: 308px) {
+	.nile-president img {
+		width: 285px;
+		height: 190px;
+	}
+}
+
 @media screen and (max-width: 305px) {
 	.footer div a img {
 		width: 200px;
 	}
+}
+
+@media screen and (max-width: 300px) {
+	.activities-btn-position { left: 210px; }
+}
+
+@media screen and (max-width: 289px) {
+	.activities-btn-position { display:none ; }
 }
