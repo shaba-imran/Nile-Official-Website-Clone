@@ -180,15 +180,15 @@ ul:last-child { color: #333; }
 	font-size: 2.5em;
 	font-weight: lighter;
 	line-height: 60px;
-	top: 27%;
-	left: 10%;
+	top: 160px;
+	left: 144px;
 	user-select: text;
 }
 
-.btn-info-1{
+.btn-info-1 {
 	position: absolute;
-	top: 60%;
-	left: 10%;
+	top: 355px;
+	left: 144px;
 }
 
 .button {
@@ -204,25 +204,26 @@ ul:last-child { color: #333; }
 
 #header-info-2 {
 	position: absolute;
-	top: 15%;
-	left: 7%;
+	top: 89px;
+	left: 101px;
 	font-size: 2.5em;
+	line-height: 60px;
 	font-weight: lighter;
 	user-select: text;
 }
 
 #header-info-2 + p {
 	position: absolute;
-	top: 38%;
-	left: 7%;
+	top: 228px;
+	left: 101px;
 	font-size: 1.25em;
 	line-height: 32px;
 }
 
 .btn-info-2 {
 	position: absolute;
-	top: 60%;
-	left: 7%;
+	top: 355px;
+	left: 101px;
 }
 
 #header-info-3 {
@@ -230,21 +231,22 @@ ul:last-child { color: #333; }
 	font-size: 2.5em;
 	font-weight: lighter;
 	line-height: 60px;
-	top: 20%;
-	left: 10%;
+	top: 118px;
+	left: 144px;
 	user-select: text;
 }
 
 .btn-info-3 {
 	position: absolute;
-	top: 60%;
-	left: 10%;
+	top: 355px;
+	left: 144px;
 }
 
 #header-info-4 {
 	position: absolute;
-	top: 25%;
-	left: 7%;
+	top: 148px;
+	left: 101px;
+	line-height: 60px;
 	font-size: 2.5em;
 	font-weight: lighter;
 	user-select: text;
@@ -252,22 +254,23 @@ ul:last-child { color: #333; }
 
 #header-info-4 + p {
 	position: absolute;
-	top: 38%;
-	left: 7%;
+	top: 225px;
+	left: 101px;
 	font-size: 1.25em;
 	line-height: 32px;
 }
 
 .btn-info-4 {
 	position: absolute;
-	top: 62%;
-	left: 7%;
+	top: 367px;
+	left: 101px;
 }
 
 #header-info-5 {
 	position: absolute;
-	top: 22%;
-	left: 10%;
+	top: 130px;
+	left: 144px;
+	line-height: 60px;
 	font-size: 2.5em;
 	font-weight: lighter;
 	user-select: text;
@@ -275,16 +278,16 @@ ul:last-child { color: #333; }
 
 #header-info-5 + p {
 	position: absolute;
-	top: 35%;
-	left: 10%;
+	top: 210px;
+	left: 144px;
 	font-size: 1.25em;
 	line-height: 32px;
 }
 
 .btn-info-5 {
 	position: absolute;
-	top: 62%;
-	left: 10%;
+	top: 367px;
+	left: 144px;
 }
 
 /* Next & previous buttons */
@@ -659,6 +662,12 @@ ul:last-child { color: #333; }
 
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1400px) {
+	#header-info-1 { top: 60px; }
+
+	.btn-info-1 { top: 240px; }
+}
+
 @media screen and (max-width: 1390px) {
 	.news-items {
 		justify-content: space-between;
@@ -684,6 +693,10 @@ ul:last-child { color: #333; }
 	.footer { padding: 60px 0px 30px 60px; }
 
 	.address-and-tel { column-gap: 2px;}
+}
+
+@media screen and (max-width: 1290px) {
+	#header-info-1, .btn-info-1 { left: 100px; }
 }
 
 @media screen and (max-width: 1257px) {
@@ -713,6 +726,17 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	#youtube-embed iframe {
+		height: 650px;
+		width: 1050px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.btn-info-1 { top: 290px; }
+}
+
 @media screen and (max-width: 1186px) {
 	.news-items { padding-right: 20px; }
 }
@@ -724,6 +748,8 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 1130px) {
+	.chat-header { padding-left: 70px; }
+
 	.address-and-tel { display: block; }
 
 	.footer-links-2 {
@@ -773,6 +799,13 @@ ul:last-child { color: #333; }
 	.event-date, .event-month { padding: 0px 10px; }
 }
 
+@media screen and (max-width: 1050px) {
+	#youtube-embed iframe {
+		height: 630px;
+		width: 1000px;
+	}
+}
+
 @media screen and (max-width: 1040px) {
 	.nile-president {
 		padding-left: 0;
@@ -810,6 +843,13 @@ ul:last-child { color: #333; }
 		height: 455px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#youtube-embed iframe {
+		height: 610px;
+		width: 950px;
 	}
 }
 
@@ -872,6 +912,13 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 950px) {
+	#youtube-embed iframe {
+		height: 575px;
+		width: 870px;
+	}
+}
+
 @media screen and (max-width: 920px) {
 	.address-and-tel { border: none; }
 
@@ -911,6 +958,13 @@ ul:last-child { color: #333; }
 	.events img {
 		width: 800px;
 		height: 450px;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	#youtube-embed iframe {
+		height: 505px;
+		width: 800px;
 	}
 }
 
@@ -994,7 +1048,24 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 630px; }
 }
 
+@media screen and (max-width: 800px) {
+	#youtube-embed iframe {
+		height: 445px;
+		width: 730px;
+	}
+}
+
 @media screen and (max-width: 780px) {
+	#header-info-1 {
+		top: 20px;
+		left: 75px;
+	}
+
+	.btn-info-1 {
+		left: 75px;
+	    top: 270px;
+	}
+	
 	.news img { width: 620px; }
 
 	.news-items, .events-items {
@@ -1058,7 +1129,7 @@ ul:last-child { color: #333; }
 		padding-left: 40px;
 	}
 
-	.events-header {padding-top: 35px;}
+	.events-header { padding-top: 35px; }
 
 	.events img {
 		width: 610px;
@@ -1074,6 +1145,17 @@ ul:last-child { color: #333; }
 	}
 }
 
+@media screen and (max-width: 730px) {
+	#youtube-embed iframe {
+		height: 405px;
+		width: 670px;
+	}
+}
+
+@media screen and (max-width: 714px) {
+	.btn-info-1 { top: 320px; }
+}
+
 @media screen and (max-width: 705px) {
 	.news-items, .events-items { padding-left: 20px; }
 
@@ -1082,6 +1164,17 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 545px; }
 
 	.news-items + .justfy-center, .events-items + .justfy-center { padding-left: 20px; }
+}
+
+@media screen and (max-width: 670px) {
+	#youtube-embed iframe {
+		height: 355px;
+		width: 590px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.btn-info-1 { top: 365px; }
 }
 
 @media screen and (max-width: 645px) {
@@ -1149,7 +1242,27 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 540px; }
 }
 
+@media screen and (max-width: 635px) {
+	#header-info-1 {
+		top: 7px;
+		left: 65px;
+	}
+
+	.btn-info-1 { left: 65px; }
+}
+
 @media screen and (max-width: 620px) {
+	#header-info-1, #header-info-2, #header-info-3, #header-info-4, #header-info-5 {
+		line-height: 35px;
+		font-size: 2em;
+	}
+
+	#header-info-1 { top: 80px; }
+
+	.btn-info-1 { top: 245px; }
+	
+	.chat-header { font-size: 2em; }
+
 	.activities-btn-position { left: 520px; }
 
 	.events-header, .news-head { font-size: 2em; }
@@ -1183,11 +1296,27 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 500px; }
 }
 
+@media screen and (max-width: 592px) {
+	#youtube-embed iframe {
+		height: 330px;
+		width: 550px;
+	}
+}
+
 @media screen and (max-width: 580px) {
 	.activities-btn-position { left: 470px; }
 }
 
+@media screen and (max-width: 576px) {
+	.btn-info-1 { top: 270px; }
+}
+
 @media screen and (max-width: 550px) {
+	#youtube-embed iframe {
+		height: 304px;
+		width: 500px;
+	}
+		
 	.nile-president img {
 		width: 520px;
 		height: 315px;
@@ -1205,6 +1334,16 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 420px; }
 }
 
+@media screen and (max-width: 525px) {
+	.btn-info-1 { top: 300px; }
+}
+
+@media screen and (max-width: 520px) {
+	#header-info-1 { top: 30px; }
+	
+	.btn-info-1 { top: 250px; }
+}
+
 @media screen and (max-width: 510px) {
 	.nile-president img { width: 480px; }
 }
@@ -1220,6 +1359,13 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 390px; }
 }
 
+@media screen and (max-width: 499px) {
+	#youtube-embed iframe {
+		height: 300px;
+		width: 450px;
+	}
+}
+
 @media screen and (max-width: 490px) {
 	.nile-president img { width: 450px; }
 
@@ -1227,6 +1373,8 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 480px) {
+	.chat-header { line-height: 35px; }
+	
 	.news img { height: 300px; }
 
 	.activities-btn-position { margin-top: -295px; }
@@ -1270,6 +1418,8 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 455px) {
+	#header-info-2 + p, #header-info-4 + p, #header-info-5 + p { font-size: 1.15em; }
+
 	.nile-president img {
 		width: 430px;
 		height: 280px;
@@ -1278,11 +1428,25 @@ ul:last-child { color: #333; }
 	.president-speech p, .president-speech strong { font-size: 1.15em; }
 }
 
+@media screen and (max-width: 449px) {
+	#youtube-embed iframe {
+		height: 290px;
+		width: 410px;
+	}
+}
+
 @media screen and (max-width: 445px) {
 	.activities-btn-position { left: 340px; }
 }
 
 @media screen and (max-width: 435px) {
+	#header-info-1, #header-info-2, #header-info-3, #header-info-4, #header-info-5 { font-size: 1.7em; }
+
+	.chat-header {
+		font-size: 1.7em;
+		padding-left: 40px;
+	}
+
 	.nile-president img {
 		width: 400px;
 		height: 260px;
@@ -1297,6 +1461,8 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 420px) {
+	.btn-info-1, .btn-info-2, .btn-info-3, .btn-info-4, .btn-info-5 { font-size: 1em; }
+
 	.activities-btn-position { left: 320px; }
 
 	.headline-5 {
@@ -1320,6 +1486,13 @@ ul:last-child { color: #333; }
 	.sports-and-recreation div img {
 		width: 330px;
 		height: 240px;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	#youtube-embed iframe {
+		height: 285px;
+		width: 370px;
 	}
 }
 
@@ -1361,6 +1534,11 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 371px) {
+	#youtube-embed iframe {
+		height: 225px;
+		width: 350px;
+	}
+	
 	.activities-btn-position { left: 280px; }
 }
 
@@ -1369,6 +1547,11 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 351px) {
+	#youtube-embed iframe {
+		height: 215px;
+		width: 320px;
+	}
+	
 	.activities-btn-position { left: 260px; }
 	
 	.news-info, .headline { padding: 0; }
@@ -1385,6 +1568,16 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 338px) {
+	#header-info-1 {
+		top: 20px;
+		left: 10px;
+	}
+	
+	.btn-info-1 {
+		top: 290px;
+		left: 10px;
+	}
+	
 	.clubs-and-activ div img { width: 100%; }
 
 	.sports-and-recreation div img { width: 100%; }
@@ -1399,6 +1592,13 @@ ul:last-child { color: #333; }
 
 @media screen and (max-width: 326px) {
 	.activities-btn-position { left: 230px; }
+}
+
+@media screen and (max-width: 320px) {
+	#youtube-embed iframe {
+		height: 185px;
+		width: 290px;
+	}
 }
 
 @media screen and (max-width: 314px) {
@@ -1434,6 +1634,17 @@ ul:last-child { color: #333; }
 	.activities-btn-position { left: 210px; }
 }
 
+@media screen and (max-width: 290px) {
+	#youtube-embed iframe {
+		height: auto;
+		width: 275px;
+	}
+}
+
 @media screen and (max-width: 289px) {
 	.activities-btn-position { display:none ; }
+}
+
+@media screen and (max-width: 283px) {
+	#header-info-1 { top: 0; }
 }
