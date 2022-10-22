@@ -23,11 +23,12 @@
 
 # How to navigate to “law and medicine accreditation page”?
 <p>1. Navigate to the homepage.</p>
-<p>2. Click on the either the first button as shown below, OR</p>
+<p>2. Click on the either the first button as shown below</p>
 <img src="./user manual/learn-more-1.jpg" width="100%">
 
+<p>OR</p>
 <p>1. Click on the second button as shown in the image below</p>
 <img src="./user manual/learn-more-2.jpg" width="100%">
 
-<p style="color: red;">Click on the link below to view the website:</p>
+<p>Click on the link below to view the website:</p>
 <a href="https://shaba-imran.github.io/Nile-Official-Website-Clone/">Nile Official Website Clone</a>
