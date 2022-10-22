@@ -121,6 +121,7 @@ ul:last-child { color: #333; }
 	text-align: center;
 	padding-top: 15px;
 	height: 70px;
+	font-size: 1.125em;
 }
 
 .notice a {
