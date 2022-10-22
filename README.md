@@ -1,17 +1,18 @@
 # Nile-Official-Website-Clone
 
 <p>This repository contains the <b>cloned</b> version of “Nile University of Nigeria” official website built using html, css and javascript. Valid links include: </p>
-• homepage
-• notice to parents page
-• law and medicine accreditation page
+• homepage <br>
+• notice to parents page <br>
+• law and medicine accreditation page <br>
 • find a course page
 
 # How to navigate to “find a course page”?
 <p>There are two ways to navigate to the find a course page: </p>
 <p>1. Navigate to the homepage.</p>
-<p>2. Click on the link as shown in the image below, OR</p>
+<p>2. Click on the link as shown in the image below</p>
 <img src="./user manual/find-a-course.jpg" width="100%">
 
+<p>OR</p>
 <p>1. Click on the button as shown below</p>
 <img src="./user manual/find-a-course-button.jpg" width="100%">
 
