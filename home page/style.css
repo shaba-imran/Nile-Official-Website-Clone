@@ -372,7 +372,7 @@ ul:last-child { color: #333; }
 	font-weight: 500;
 }
 
-.card-info-1 {
+.card-info {
 	font-size: 1.25em;
 	font-weight: 300;
 	padding: 40px 0px;
@@ -677,6 +677,16 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 1300px) {
+	.cards {
+		padding-right: 50px;
+		padding-left: 50px;
+		padding-bottom: 70px;
+	}
+
+	.institution-features { padding: 50px; }
+
+	#global, #employability, #experience { padding: 80px 30px; }
+		
 	.nile-president {
 		padding-left: 50px;
 		padding-right: 50px;
@@ -709,6 +719,10 @@ ul:last-child { color: #333; }
 		padding-right: 20px;
 		padding-top: 0;
 	}
+}
+
+@media screen and (max-width: 1233px) {
+	.institution-features { padding: 50px 0px; }
 }
 
 @media screen and (max-width: 1230px) {
@@ -899,11 +913,18 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 1030px) {
+	.cards {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
 	#header-info-2 { top: 20px; }
 
 	#header-info-2 + p { top: 220px; }
 
 	.btn-info-2 { top: 330px; }
+
+	#global, #employability, #experience { padding: 70px 30px 40px; }
 }
 
 @media screen and (max-width: 1010px) {
@@ -918,6 +939,38 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 990px) {
+	.cards {
+		display: block;
+		padding: 0px 50px;
+	}
+
+	.card-1 { margin: 30px 0px; }
+
+	.border-bottom-1 { padding-bottom: 35px; }
+
+	.card-info { padding: 20px 0px; }
+
+	.card-2 {
+		margin: 40px 0px;
+		padding: 20px;
+	}
+
+	.institution-features {
+		display: block;
+		padding: 70px 40px;
+	}
+
+	.institution-features img {
+		width: 150px;
+		height: 150px;
+	}
+
+	#global, #employability, #experience { width: 100%; }
+
+	#global { margin-bottom: 40px; }
+
+	#employability { margin-bottom: 40px; }
+	
 	.nile-president {
 		display: block;
 		padding: 0;
@@ -1392,6 +1445,17 @@ ul:last-child { color: #333; }
 	.btn-info-1 { top: 365px; }
 }
 
+@media screen and (max-width: 667px) {
+	.institution-features { padding: 70px 20px; }
+
+	.institution-features img {
+		width: 130px;
+		height: 130px;
+	}
+
+	#global, #employability, #experience { padding-top: 50px; }
+}
+	
 @media screen and (max-width: 645px) {
 	.nile-president img {
 		width: 540px;
@@ -1636,7 +1700,26 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 480px) {
-	.chat-header { line-height: 35px; }
+	.cards { padding: 0px 20px; }
+	
+	.card-header { font-size: 1.32em; }
+
+	.institution-features img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.institution-features h2 {
+		font-size: 2em;
+		line-height: 35px;
+	}
+
+	.institution-features p { font-size: 1.15em; }
+
+	#global, #employability, #experience {
+		padding-top: 40px;
+		padding-bottom: 25px;
+	}
 	
 	.news img { height: 300px; }
 
@@ -1687,6 +1770,8 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 455px) {
+	.card-info { font-size: 1.15em; }
+
 	#header-info-2 + p, #header-info-4 + p, #header-info-5 + p { font-size: 1.15em; }
 
 	.nile-president img {
@@ -1991,6 +2076,11 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 320px) {
+	.institution-features img {
+		width: 70px;
+		height: 70px;
+	}
+	
 	#youtube-embed iframe {
 		height: 185px;
 		width: 290px;
