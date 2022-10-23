@@ -143,27 +143,27 @@ ul:last-child { color: #333; }
 }
 
 .slide-1 {
-	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(../images/slides/slider1.jpeg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(images/slides/slider1.jpeg);
 	background-position: 50% 90%;
 }
 
 .slide-2 {
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url(../images/slides/slider2.jpeg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url(images/slides/slider2.jpeg);
 	background-position: 50% 80%;
 }
 
 .slide-3 {
-	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(../images/slides/slider3.jpeg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(images/slides/slider3.jpeg);
 	background-position: 50% 40%;
 }
 
 .slide-4 {
-	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(../images/slides/slider4.jpeg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url(images/slides/slider4.jpeg);
 	background-position: 50% 85%;
 }
 
 .slide-5 {
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url(../images/slides/slider5.jpeg);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url(images/slides/slider5.jpeg);
 	background-position: 50% 30%;
 }
 
