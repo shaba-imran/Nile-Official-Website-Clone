@@ -37,7 +37,7 @@ OR
 1. Navigate to the homepage.
 2. Click on the either the first button as shown below
 
-![learn more button](/user-manual/learn-more-1.jpp)
+![learn more button](/user-manual/learn-more-1.jpg)
 
 OR
 
