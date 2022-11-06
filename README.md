@@ -37,7 +37,7 @@ OR
 1. Navigate to the homepage.
 2. Click on the either the first button as shown below
 
-![learn more button](/user-manual/learn-more-1.jpp)
+![learn more button](/user-manual/learn-more-1.jpg)
 
 OR
 
@@ -47,4 +47,4 @@ OR
 
 > Click on the link below to view the website:
 >
->> <a href="https://shaba-imran.github.io/Nile-Official-Website-Clone/">Nile Official Website Clone</a>
+>> [Nile Official Website Clone](https://shaba-imran.github.io/Nile-Official-Website-Clone/)
