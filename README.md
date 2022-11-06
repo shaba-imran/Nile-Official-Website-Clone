@@ -1,4 +1,3 @@
-
 # Nile-Official-Website-Clone
 
 This repository contains a **cloned** version of “Nile University of Nigeria” official website built using html, css and javascript. Valid links include:
