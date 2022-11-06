@@ -17,7 +17,8 @@ There are two ways to navigate to the find a course page:
 
 1. Click on the link as shown in the image below
 
-<img src="./user manual/find-a-course.jpg" width="100%">
+![find a course](/user-manual/find-a-course.jpg)
+<!-- <img src="./user manual/find-a-course.jpg" width="100%"> -->
 
 OR
 
