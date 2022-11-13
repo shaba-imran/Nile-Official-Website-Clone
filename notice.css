@@ -1,6 +1,4 @@
-body {
-	color: #000e27;
-}
+body { color: #000e27; }
 
 .intro {
 	font-size: 3em;
@@ -30,4 +28,38 @@ body {
 	line-height: 32px;
 	font-size: 1.25em;
 	font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+	.important-notice span { font-size: 35px; }
+}
+
+@media screen and (max-width: 990px) {
+	.intro {
+		padding: 90px 0px;
+		text-align: center;
+	}
+
+	.important-notice {
+		margin: 0;
+		width: 100%;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		padding-left: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.intro {
+		font-size: 2em;
+		line-height: 1.5em;
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	.important-notice span { font-size: 30px; }
+}
+
+@media screen and (max-width: 455px) {
+	.important-notice p { font-size: 1.15em; }
 }
