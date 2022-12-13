@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.min.css">
 	<link rel="stylesheet" type="text/css" href="study.min.css">
 	<script src="https://kit.fontawesome.com/4d83bb1c64.js" crossorigin="anonymous"></script>
 
@@ -141,6 +141,28 @@
 		</nav>
 	</header>
 
+	<div class="nav-2">
+		<div id="Nile-logo">
+			<a href="index.html">
+				<img src="images/nile-logo-main.svg" width="150px" height="90px" alt="nile main logo" class="dropdown">
+			</a>
+		</div>
+
+		<div id="Sidenav">
+			<div id="mySidenav" class="sidenav">
+			  <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
+			  <a href="#">About</a>
+			  <a href="#">Study</a>
+			  <a href="#">Admission</a>
+			  <a href="#">Pay Fees</a>
+			  <a href="#">Campus Life</a>
+			  <a href="#">Library</a>
+			</div>
+
+			<span id="equals" style="font-size:45px; cursor:pointer;" onclick="openNav()">&#9776;</span>
+		</div>
+	</div>
+
 	<section class="find-a-course">
 		<h1>Find a course</h1>
 		<p>We have over 60 courses that cover a wide variety of subjects, entry dates and study levels. Here are the exciting subject areas available for you to study:</p>
@@ -189,7 +211,7 @@
 						<i class="fa-solid fa-location-dot"></i>
 					</div>
 
-					<div style="padding-right: 45px;">
+					<div class="address">
 						<p>Plot 681, Cadastral Zone C-OO, Research & <br> Institution Area, Jabi Airport Bypass, Abuja FCT, <br> 900001 Nigeria</p>
 					</div>
 
@@ -197,7 +219,7 @@
 						<i class="fa-solid fa-phone"></i>
 					</div>
 
-					<div style="padding-right: 150px;">
+					<div class="phone">
 						<p>+234 806 735 0919 <br> +234 805 489 2616</p>
 					</div>
 				</div>
@@ -217,7 +239,7 @@
 				</div>
 			</div>
 
-			<div class="footer-links-2" style="padding-left: 22px;">
+			<div class="footer-links-2">
 				<a href="#">CELL APPLICATION</a>
 				<a href="#">VENDOR REGISTRATION</a>
 				<a href="#">PERSONNEL INFORMATION SYSTEM</a>
