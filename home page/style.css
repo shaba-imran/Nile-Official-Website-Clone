@@ -1336,6 +1336,11 @@ ul:last-child { color: #333; }
 		align-items: center;
 		justify-content: space-between;
 	}
+
+	.fa-angle-down {
+		font-size: 0.875em;
+		padding-left: 5px;
+	}
 }
 
 @media screen and (max-width: 780px) {

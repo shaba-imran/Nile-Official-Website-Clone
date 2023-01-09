@@ -31,32 +31,34 @@ function showSlides(n) {
 // SIDE NAVIGATION
 let sideNav = document.getElementById("mySidenav");
 
-const changeSideNavWidth = (currentViewPort, newWidth) => {
-  if (currentViewPort.matches) { // If media query matches
-    sideNav.style.width = newWidth;
-  }
-}
-
-// Open Side Navigation
-const openNav = () => {
+const openSideNav = () => {
   sideNav.style.width = "350px";
-
+  const reduceSideNavWidth1 = (viewport1) => {
+    if (viewport1.matches) { // If media query matches
+      sideNav.style.width = "250px";
+    }
+  }
   let viewport1 = window.matchMedia("(max-width: 535px)");
-  changeSideNavWidth(viewport1, '250px'); // Call listener function at run time
-  viewport1.addListener(changeSideNavWidth); // Attach listener function on state changes
+  reduceSideNavWidth1(viewport1); // Call listener function at run time
+  viewport1.addListener(reduceSideNavWidth1); // Attach listener function on state changes
 
+
+  const reduceSideNavWidth2 = (viewport2) => {
+    if (viewport2.matches) {
+      sideNav.style.width = "200px";
+    }
+  }
   let viewport2 = window.matchMedia("(max-width: 320px)");
-  changeSideNavWidth(viewport2, '200px'); // Call listener function at run time
-  viewport2.addListener(changeSideNavWidth); // Attach listener function on state changes
+  reduceSideNavWidth2(viewport2);
+  viewport2.addListener(reduceSideNavWidth2);
 }
 
-// Close Side Navigation
-const closeNav = () => {
+const closeSideNav = () => {
   sideNav.style.width = "0";
 }
 
 
-// CHAT SECTION
+// Chat Section
 // const students = document.getElementsByClassName("students");
 // const prevButton = document.getElementById("myBtn1");
 // const nextButton = document.getElementById("myBtn2"); 
