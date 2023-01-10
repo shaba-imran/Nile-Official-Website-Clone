@@ -144,6 +144,13 @@ ul:last-child { color: #333; }
 
 .sidenav a:hover { color: #1c4da1; }
 
+.Dropdown-content a {
+	font-size: 1em;
+  padding-left: 35px;
+  text-decoration: none;
+  display: block;
+}
+
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -152,10 +159,12 @@ ul:last-child { color: #333; }
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav { padding-top: 15px; }
+@media screen and (max-height: 450px) { .sidenav { padding-top: 15px; } }
 
-  .sidenav a { font-size: 18px; }
+@media screen and (max-width: 450px) {
+	.sidenav a { font-size: 1em; }
+
+	.Dropdown-content a { font-size: 0.875em; }
 }
 
 
@@ -1341,6 +1350,22 @@ ul:last-child { color: #333; }
 		font-size: 0.875em;
 		padding-left: 5px;
 	}
+
+	.Dropdown {
+  	position: relative;
+  	display: block;
+	}
+
+	.Dropdown-content {
+	  display: none;
+	  position: absolute;
+	  min-width: 350px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  overflow: auto;
+	  z-index: 1;
+	}
+
+	.show { display: block; }
 }
 
 @media screen and (max-width: 780px) {
@@ -1710,6 +1735,10 @@ ul:last-child { color: #333; }
 	}
 	
 	.activities-btn-position { left: 450px; }
+}
+
+@media screen and (max-width: 535px) {
+	.Dropdown-content { min-width: 250px; }
 }
 
 @media screen and (max-width: 530px) {
@@ -2165,6 +2194,8 @@ ul:last-child { color: #333; }
 }
 
 @media screen and (max-width: 320px) {
+	.Dropdown-content { min-width: 200px; }
+
 	.institution-features img {
 		width: 70px;
 		height: 70px;
