@@ -33,6 +33,7 @@ const closeSideNav = () => {
   setSideNavWidth("0");
 }
 
+// Drop Down for Side Navigation
 const setMarginValue = (idName, value) => {
   getElementById(idName).style.marginBottom = value;
 }
@@ -41,125 +42,118 @@ const setMarginValue = (idName, value) => {
 toggle between hiding and showing the dropdown content */
 const openFirstDropDown = () => {
   getElementById('myFirstDropdown').classList.toggle("show");
-  setMarginValue('firstDropdown', '730px');
-  const changeMarginValue = (viewport) => {
-    if (viewport.matches) {
-      if (viewport.media === "(max-width: 535px)") {
-        setMarginValue('firstDropdown', '780px');
-      } else if (viewport.media === "(max-width: 450px)") {
-        setMarginValue('firstDropdown', '725px');
-      } else if (viewport.media === "(max-width: 320px)") {
-        setMarginValue('firstDropdown', '760px');
-      }
+  
+  const ranges = {
+    "(max-width: 535px)": '790px',
+    "(max-width: 450px)": '725px',
+    "(max-width: 320px)": '770px',
+  }
+  let value = '740px'
+  for (const range in ranges) {
+    if (window.matchMedia(range).matches) {
+      value = ranges[range]
+      break
     }
   }
-  let viewport1 = window.matchMedia("(max-width: 535px)");
-  changeMarginValue(viewport1);
-  viewport1.addListener(changeMarginValue);
+  setMarginValue('firstDropdown', value);
 
-  let viewport2 = window.matchMedia("(max-width: 450px)");
-  changeMarginValue(viewport2);
-  viewport2.addListener(changeMarginValue);
-
-  let viewport3 = window.matchMedia("(max-width: 320px)");
-  changeMarginValue(viewport3);
-  viewport3.addListener(changeMarginValue);
+  window.matchMedia("(max-width: 535px), (max-width: 450px), (max-width: 320px)").addListener(event => {
+    if(event.matches) {
+      setMarginValue('firstDropdown', ranges[event.media])
+    }
+  });
 }
 
 const openSecondDropDown = () => {
   getElementById('mySecondDropdown').classList.toggle("show");
-  setMarginValue('secondDropdown', '720px');
-  const changeMarginValue = (viewport) => {
-    if (viewport.matches) {
-      if (viewport.media === "(max-width: 535px)") {
-        setMarginValue('secondDropdown', '825px');
-      } else if (viewport.media === "(max-width: 450px)") {
-        setMarginValue('secondDropdown', '720px');
-      } else if (viewport.media === "(max-width: 320px)") {
-        setMarginValue('secondDropdown', '830px');
-      }
+  
+  const ranges = {
+    "(max-width: 535px)": '835px',
+    "(max-width: 450px)": '730px',
+    "(max-width: 320px)": '840px',
+  }
+  let value = '730px'
+  for (const range in ranges) {
+    if (window.matchMedia(range).matches) {
+      value = ranges[range]
+      break
     }
   }
-  let viewport1 = window.matchMedia("(max-width: 535px)");
-  changeMarginValue(viewport1);
-  viewport1.addListener(changeMarginValue);
+  setMarginValue('secondDropdown', value);
 
-  let viewport2 = window.matchMedia("(max-width: 450px)");
-  changeMarginValue(viewport2);
-  viewport2.addListener(changeMarginValue);
-
-  let viewport3 = window.matchMedia("(max-width: 320px)");
-  changeMarginValue(viewport3);
-  viewport3.addListener(changeMarginValue);
+  window.matchMedia("(max-width: 535px), (max-width: 450px), (max-width: 320px)").addListener(event => {
+    if(event.matches) {
+      setMarginValue('secondDropdown', ranges[event.media])
+    }
+  });
 }
 
 const openThirdDropDown = () => {
   getElementById('myThirdDropdown').classList.toggle("show");
-  setMarginValue('thirdDropdown', '570px');
-  const changeMarginValue = (viewport) => {
-    if (viewport.matches) {
-      if (viewport.media === "(max-width: 535px)") {
-        setMarginValue('thirdDropdown', '630px');
-      } else if (viewport.media === "(max-width: 450px)") {
-        setMarginValue('thirdDropdown', '580px');
-      } else if (viewport.media === "(max-width: 320px)") {
-        setMarginValue('thirdDropdown', '625px');
-      }
+  
+  const ranges = {
+    "(max-width: 535px)": '640px',
+    "(max-width: 450px)": '595px',
+    "(max-width: 320px)": '640px',
+  }
+  let value = '590px'
+  for (const range in ranges) {
+    if (window.matchMedia(range).matches) {
+      value = ranges[range]
+      break
     }
   }
-  let viewport1 = window.matchMedia("(max-width: 535px)");
-  changeMarginValue(viewport1);
-  viewport1.addListener(changeMarginValue);
+  setMarginValue('thirdDropdown', value);
 
-  let viewport2 = window.matchMedia("(max-width: 450px)");
-  changeMarginValue(viewport2);
-  viewport2.addListener(changeMarginValue);
-
-  let viewport3 = window.matchMedia("(max-width: 320px)");
-  changeMarginValue(viewport3);
-  viewport3.addListener(changeMarginValue);
+  window.matchMedia("(max-width: 535px), (max-width: 450px), (max-width: 320px)").addListener(event => {
+    if(event.matches) {
+      setMarginValue('thirdDropdown', ranges[event.media])
+    }
+  });
 }
 
 const openFourthDropDown = () => {
   getElementById('myFourthDropdown').classList.toggle("show");
-  setMarginValue('fourthDropdown', '300px');
-  const changeMarginValue = (viewport) => {
-    if (viewport.matches) {
-      if (viewport.media === "(max-width: 535px)") {
-        setMarginValue('fourthDropdown', '310px');
-      } else if (viewport.media === "(max-width: 450px)") {
-        setMarginValue('fourthDropdown', '285px');
-      } else if (viewport.media === "(max-width: 320px)") {
-        setMarginValue('fourthDropdown', '320px');
-      }
+  
+  const ranges = {
+    "(max-width: 535px)": '335px',
+    "(max-width: 450px)": '300px',
+    "(max-width: 320px)": '330px',
+  }
+  let value = '315px'
+  for (const range in ranges) {
+    if (window.matchMedia(range).matches) {
+      value = ranges[range]
+      break
     }
   }
-  let viewport1 = window.matchMedia("(max-width: 535px)");
-  changeMarginValue(viewport1);
-  viewport1.addListener(changeMarginValue);
+  setMarginValue('fourthDropdown', value);
 
-  let viewport2 = window.matchMedia("(max-width: 450px)");
-  changeMarginValue(viewport2);
-  viewport2.addListener(changeMarginValue);
-
-  let viewport3 = window.matchMedia("(max-width: 320px)");
-  changeMarginValue(viewport3);
-  viewport3.addListener(changeMarginValue);
+  window.matchMedia("(max-width: 535px), (max-width: 450px), (max-width: 320px)").addListener(event => {
+    if(event.matches) {
+      setMarginValue('fourthDropdown', ranges[event.media])
+    }
+  });
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("Dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-        setMarginValue('firstDropdown', '0');
-        setMarginValue('secondDropdown', '0');
-        setMarginValue('thirdDropdown', '0');
-        setMarginValue('fourthDropdown', '0');
-      }
+const dropdownTriggers = document.querySelectorAll('.dropbtn');
+const dropdowns = document.querySelectorAll('.Dropdown-content');
+
+function closeDropdowns() {
+  dropdowns.forEach(dropdown => {
+    if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
     }
-  }
+  });
+  setMarginValue('firstDropdown', '0');
+  setMarginValue('secondDropdown', '0');
+  setMarginValue('thirdDropdown', '0');
+  setMarginValue('fourthDropdown', '0');
 }
+
+window.addEventListener('click', event => {
+  if (!event.target.matches(dropdownTriggers)) {
+    closeDropdowns();
+  }
+});
