@@ -137,23 +137,18 @@ const openFourthDropDown = () => {
 }
 
 // Close the dropdown if the user clicks outside of it
-const dropdownTriggers = document.querySelectorAll('.dropbtn');
-const dropdowns = document.querySelectorAll('.Dropdown-content');
-
-function closeDropdowns() {
-  dropdowns.forEach(dropdown => {
-    if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("Dropdown-content");
+    for (let i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        setMarginValue('firstDropdown', '0');
+        setMarginValue('secondDropdown', '0');
+        setMarginValue('thirdDropdown', '0');
+        setMarginValue('fourthDropdown', '0');
+      }
     }
-  });
-  setMarginValue('firstDropdown', '0');
-  setMarginValue('secondDropdown', '0');
-  setMarginValue('thirdDropdown', '0');
-  setMarginValue('fourthDropdown', '0');
-}
-
-window.addEventListener('click', event => {
-  if (!event.target.matches(dropdownTriggers)) {
-    closeDropdowns();
   }
-});
+}
