@@ -1719,10 +1719,6 @@ ul:last-child { color: #333; }
 	.btn-info-1 { top: 270px; }
 }
 
-@media screen and (max-height: 560px) {
-	.btn-info-3 { display: none; }
-}
-
 @media screen and (max-width: 550px) {
 	#youtube-embed iframe {
 		height: 304px;
@@ -1783,10 +1779,6 @@ ul:last-child { color: #333; }
 	#header-info-2 + p { left: 60px; }
 
 	.btn-info-2 { left: 60px; }
-}
-
-@media screen and (max-height: 504px) {
-	.btn-info-2 { display: none; }
 }
 
 @media screen and (max-width: 500px) {
