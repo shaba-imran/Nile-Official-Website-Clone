@@ -3,6 +3,7 @@ body { color: #000e27; }
 .visited:visited { color: #1c4da1; }
 
 .find-a-course {
+	margin-top: 92px;
 	background-color: #e4ebf9;
 	padding: 150px 0px 50px 120px;
 }
@@ -159,12 +160,20 @@ body { color: #000e27; }
 	.info-1 p, .info-2 p { width: 950px; }
 }
 
+@media screen and (max-width: 957px) {
+	.find-a-course { margin-top: 222px; }
+}
+
 @media screen and (max-width: 950px) {
 	.info-1 p, .info-2 p { width: 880px; }
 }
 
 @media screen and (max-width: 880px) {
 	.info-1 p, .info-2 p { width: 770px; }
+}
+
+@media screen and (max-width: 783px) {
+	.find-a-course { margin-top: 135px; }
 }
 
 @media screen and (max-width: 770px) {
@@ -259,6 +268,10 @@ body { color: #000e27; }
 	}
 }
 
+@media screen and (max-width: 420px) {
+	.find-a-course { margin-top: 130px; }
+}
+
 @media screen and (max-width: 415px) {
 	.img-1 img {
 		width: 370px;
@@ -271,7 +284,13 @@ body { color: #000e27; }
 	}
 }
 
+@media screen and (max-width: 390px) {
+	.find-a-course { padding-bottom: 30px; }
+}
+
 @media screen and (max-width: 375px) {
+	.find-a-course { margin-top: 110px; }
+
 	.img-1 img {
 		width: 100%;
 		height: 245px;
@@ -280,10 +299,6 @@ body { color: #000e27; }
 	.img-2 img { width: 100%; }
 
 	#padding-top { padding-top: 80px; }
-}
-
-@media screen and (max-width: 390px) {
-	.find-a-course { padding-bottom: 30px; }
 }
 
 @media screen and (max-width: 370px) {
@@ -306,6 +321,10 @@ body { color: #000e27; }
 	.info-1 p, .info-2 p { width: 290px; }
 }
 
+@media screen and (max-width: 310px) {
+	.info-1 i { display: none; }
+}
+
 @media screen and (max-width: 305px) {
 	.info-1 strong, .info-2 strong {
 		padding: 0;
@@ -314,6 +333,8 @@ body { color: #000e27; }
 		display: block;
 		text-align: center;
 	}
+
+	.info-2 i { display: none; }
 }
 
 @media screen and (max-width: 300px) {
